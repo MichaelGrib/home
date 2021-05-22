@@ -1,8 +1,8 @@
 {
   "name": "portpholio",
   "version": "0.1.0",
-  "homepage": "https://michaelgrib.github.io/home/",
-  "start_url": ".",
+  "homepage": "https://michaelgrib.github.io/home/build/",
+  "start_url": "./build/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
