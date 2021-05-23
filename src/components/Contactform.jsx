@@ -21,7 +21,9 @@ export const Contactform = () => {
     return (
         <div className="maxcontainer">
             <form
-            onSubmit={sendEmail}
+             id="contactform"
+             autoComplete="off"
+             onSubmit={sendEmail}
              ref={form}
              novalidate
              action="mailto:gribmichael1998@gmail.com" 

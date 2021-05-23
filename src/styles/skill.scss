@@ -1,0 +1,54 @@
+@media (min-width: $desktop) {
+    .skill__container {
+        @include box_d
+    }
+}
+@media (min-width: $tablet) and (max-width: $to_desktop) {
+    .skill__container {
+        @include box_t
+    }
+}
+@media (max-width: $to_tablet) {
+    .skill__container {
+        @include box_p
+    }
+}
+
+
+
+.skill__container {
+    background-color: hsl(56, 100%, 92%);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 0px #0000001e;
+    transition: 700ms ease;
+}
+.skill__container:hover {
+    box-shadow: 0px 0px 120px #00000033;
+}
+
+.skill__h2 {
+    font-size: 33px;
+    text-align: right;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+.skill__item {
+    list-style-type: square;
+    text-align: left;
+    margin-left: auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    transition: 400ms ease;
+    cursor: pointer;
+    user-select: none;
+}
+@media (hover: hover) {
+    .skill__item:hover {
+        padding-left: 10px;
+    }
+}
+.skill__list {
+    margin-bottom: 48px;
+}

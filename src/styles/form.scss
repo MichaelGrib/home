@@ -1,11 +1,25 @@
+@media (min-width: $desktop) {
+    .form__container {
+        @include box_d
+    }
+}
+@media (min-width: $tablet) and (max-width: $to_desktop) {
+    .form__container {
+        @include box_t
+    }
+}
+@media (max-width: $to_tablet) {
+    .form__container {
+        @include box_p
+    }
+}
+
+
 .form__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 45px 45px 120px;
-    padding: 40px 180px;
-    border-radius: $rounded;
     background-color: hsl(16, 100%, 92%);
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 0px #0000001e;
