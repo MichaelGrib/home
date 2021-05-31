@@ -16,10 +16,10 @@ const App = () => {
                 <Navbar/>
 
                 <Switch>
-                    <Route path="/works">
+                    <Route path="/home/works">
                         <Works/>
                     </Route>
-                    <Route path="/">
+                    <Route path="/home/">
                             <Cover/>
                             <Skill/>
                             <Contactform/>
