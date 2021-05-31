@@ -57,13 +57,14 @@
         text-decoration: none;
         font-size: 18px;
         color: $black;
+        font-weight: 400;
         padding-top: 26px;
         padding-bottom: 26px;
         color: $black;
         transition: 800ms;
     }
     .nav__link:hover {
-        color: $black_transparent;
+        color: $gray;
     }
 
 
@@ -84,7 +85,7 @@
         transition:550ms ease;
     }
     .nav__social:hover {
-        background-color: $pink;
+        background-color: $pink_dark;
     }
     .telegram {
         mask-image: $telegram;

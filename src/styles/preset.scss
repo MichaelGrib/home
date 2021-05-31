@@ -5,16 +5,21 @@ html * {
 }
 
 $rounded: 20px;
-$softed: 20px;
+$softed: 10px;
 
 //color
-
+$white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 5%);
-$yellow_light: hsl(30, 80%, 98%);
-$yellow: hsl(30, 80%, 78%);
+$blue: #C3F8FA;
+$yellow_light: #FAEEAA;
+$yellow: hsl(51, 89%, 72%);
 $transparent: #00000000;
 $black_transparent: #00000078;
-$pink: hsl(350, 100%, 90%);
+$pink: #FA91D8;
+$pink_dark: #AD6D99;
+$pink_light: hsl(319, 91%, 87%);
+$red: #FAA69D;
+$gray: #808080;
 
 $max_container: 1300px;
 

@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: hsl(16, 100%, 92%);
+    background-color: $pink_light;
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 0px #0000001e;
     transition: 700ms ease;
@@ -46,12 +46,12 @@
     letter-spacing: 1px;
     color: $black;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid $gray;
     outline: none;
 }
 .form__input:not(:focus):invalid,
 .form__textarea:not(:focus):invalid {
-    border-color: red;
+    border-color: $red;
 }
 .form__textarea {
     resize: vertical;
@@ -64,11 +64,12 @@
     font-size: 22px;
     min-width: 160px;
     border-radius: $softed;
+    color: $white;
     outline: none;
     border: none;
-    background-color: $yellow_light;
+    background-color: $pink;
     transition: 500ms ease;
 }
 .form__btn:hover {
-    background-color: $yellow;
+    background-color: $pink_dark;
 }

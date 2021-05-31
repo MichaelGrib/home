@@ -1,0 +1,114 @@
+@media (min-width: $desktop) {
+    .works__container {
+        @include box_d
+    }
+    .works__item {
+        margin: 25px;
+        width: calc(33.333% - 50px);
+    }
+}
+@media (min-width: $tablet) and (max-width: $to_desktop) {
+    .works__container {
+        @include box_t
+    }
+    .works__item {
+        margin: 15px;
+        width: calc(50% - 30px);
+    }
+}
+@media (max-width: $to_tablet) {
+    .works__container {
+        @include box_p
+    }
+    .works__item {
+        margin: 8px;
+        width: calc(100% - 16px);
+    }
+}
+
+.works__container {
+    font-family: 'Roboto', sans-serif;
+    max-width: $max_container;
+    margin: 0 auto;
+    padding-top: 95px;
+}
+.works__h2 {
+    font-size: 48px;
+    padding-left: $rounded;
+    padding-bottom: $rounded;
+    letter-spacing: 1px;
+}
+
+.works__title {
+    font-size: 18px;
+    margin: 0 $rounded;
+    letter-spacing: 1px;
+    padding-bottom: 26px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $black;
+}
+.works__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.works__item {
+    position: relative;
+    padding-bottom: auto;
+    margin-bottom: 48px;
+}
+.works__preview {
+    border-radius: $rounded;
+    width: 100%;
+}
+.works__name {
+    display: block;
+    text-decoration: none;
+    font-size: 23px;
+    padding-left: $rounded;
+    margin-bottom: 14px;
+    border-left: 4px solid $transparent;
+    color: $black;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 400;
+    transition: 200ms;
+}
+.works__name:hover {
+    color: $blue;
+    border-left-color: $blue;
+}
+
+.works__description {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    opacity: 0;
+    color: $white;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-right: 40px;
+    transition: 800ms ease;
+    transition-delay: 100ms;
+}
+.works__filter {
+    border-radius: $rounded;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $transparent;
+    transition: 400ms ease;
+}
+@media (hover: hover) {
+    .works__item:hover .works__filter {
+        background-color: hsla(0, 0%, 0%, 0.698);
+        
+    }
+    .works__item:hover .works__description {
+        opacity: 100;
+    } 
+}
