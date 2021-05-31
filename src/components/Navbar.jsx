@@ -15,9 +15,9 @@ export const Navbar = () => {
 
                 </ul>
                 <div className="nav__socials">
-                    <a href="#" className="nav__social telegram"></a>
-                    <a href="#" className="nav__social github"></a>
-                    <a href="#" className="nav__social facebook"></a>
+                    <a href="https://t.me/MikhailGrib" className="nav__social telegram"></a>
+                    <a href="https://github.com/MichaelGrib" className="nav__social github"></a>
+                    <a href="https://www.facebook.com/michael.hryb.92/" className="nav__social facebook"></a>
                 </div>
             </div>
         </nav>
